@@ -1,0 +1,38 @@
+.app__circles {
+    position: absolute;
+    z-index: -1;
+}
+
+.app__circles-larger {
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+}
+
+.app__circles-smaller {
+    width: 37rem;
+    height: 37rem;
+    border-radius: 50%;
+    margin-top: -20rem;
+}
+
+.solid-circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.outer1 {
+    margin-top: -40.5rem;
+    margin-left: 1rem;
+}
+
+.outer2 {
+    margin-top: 37rem;
+    margin-left: 20.5rem;
+}
+
+.inner {
+    margin-top: -37.3rem;
+    margin-left: 14rem;
+}

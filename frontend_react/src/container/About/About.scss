@@ -1,0 +1,68 @@
+#about {
+    overflow: hidden;
+}
+
+.app__about {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.app__profiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.app__profile-item {
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem;
+
+    img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .border-hover {
+        width: 1rem;
+        height: 1rem;
+        opacity: 0;
+    }
+    
+    .border1 {
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        margin-left: -1rem;
+    }
+
+    .border2 {
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-left: auto;
+        margin-right: -1rem;
+    }
+
+    &:hover {
+        .border-hover {
+            opacity: 1;
+            transition: opacity 1s ease-out;
+        }
+    }
+
+    @media screen and (min-width: 2000px) {
+        width: 370px;
+        margin: 2rem 4rem;
+
+        img {
+            height: 320px;
+        }
+    }
+}
